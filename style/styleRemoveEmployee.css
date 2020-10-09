@@ -21,7 +21,7 @@
 .content .selection tr th {
     width: 500px;
   
-    padding-bottom: 15px;    
+    
 }
 .content .result{
     color: #ffffff;
@@ -38,10 +38,10 @@
     color: #ffffff;
     text-align: center;
 }
-td {
+.content .result td {
     width: 300px;
     padding-left: 20px;    
-    padding-bottom: 20px;    
+    height: 30px;
     }
 
 .heading{
@@ -66,5 +66,11 @@ td {
     width: 100%;
      font-size: 14px;
      font-family: "Roboto", sans-serif;
-     color: #555;
+     color: #000;
+     padding-left: 10px;
  }
+
+ .content .result table tr:not(:first-child){
+    cursor: pointer;transition: all .25s ease-in-out;
+}
+.content .result table tr:not(:first-child):hover{background-color: #041d31;}
