@@ -5,6 +5,7 @@
     <title>Human Resource Management System</title>
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/styleRemoveEmployee.css">
+    
   </head>
 <div class="content">
     <div class="heading"><h3>Remove Employee</h3></div>
@@ -16,7 +17,7 @@
                 <label class="label">Employee Id</label>
               </td>
               <th>
-                <input class="input" type="text" name="empid">
+                <input class="input" type="text" name="empid" id="empid" readonly>
               </th>
             </tr>
            </table>
@@ -24,13 +25,13 @@
             <tr>
                 <td></td>
                 <th>
-                    <a href="#" class="Show">Show &raquo;</a>
+                    <a href="#" class="Show">Remove Employee &raquo;</a>
                 </th>
               </tr>
            </table>
     </div>
     <div class="result">
-        <table >
+        <table id="table" >
             <tr>
               <th>
                     Employee Id
@@ -43,62 +44,60 @@
               </th>
             </tr><tr>
               
+              <td>11213</td>
               <td>
-                  C
-              </td>
-              <td>
-                D
+               Ravindu
             </td><td>
                 D
             </td>
             </tr>
             <tr>
                 <td>
-                    A
+                  112312
                 </td>
                
                 <td>
-                  D
+                  Chamika Deshan
               </td><td>
                   D
               </td>
               </tr><tr>
                 <td>
-                    A
+                    48152
                 </td>
                
                 <td>
-                  D
+                Lakith rathnayaka
               </td><td>
                   D
               </td>
               </tr><tr>
                 <td>
-                    A
+                   1231231
                 </td>
               
                 <td>
-                  D
+                  Supun
               </td><td>
                   D
               </td>
               </tr><tr>
                 <td>
-                    A
+                    33124
                 </td>
                 
                 <td>
-                  D
+                  Nanayakkara
               </td><td>
                   D
               </td>
               </tr><tr>
                 <td>
-                    A
+                   2345678
                 </td>
                 
                 <td>
-                  D
+                  Bhagya
               </td><td>
                   D
               </td>
@@ -107,18 +106,21 @@
         </table>
         
     </div>
-    <div class="selection">
-    <table>
-        <tr>
-            <td></td>
-            <th>
-                <a href="#" class="Show">Remove Employee From the System &raquo;</a>
-            </th>
-          </tr>
-    </table>
-    </div>
-</div>
+   
   <body>
+    <script>
     
+      var table = document.getElementById('table');
+      
+      for(var i = 1; i < table.rows.length; i++)
+      {
+          table.rows[i].onclick = function()
+          {
+               document.getElementById("empid").value = this.cells[0].innerHTML;
+              
+          };
+      }
+
+</script>
 </body>
 </html>
