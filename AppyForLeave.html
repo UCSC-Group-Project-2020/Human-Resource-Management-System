@@ -4,11 +4,85 @@
     <meta charset="utf-8">
     <title>Human Resource Management System</title>
     <link rel="stylesheet" href="style/main.css">
-    
+    <link rel="stylesheet" href="style/styleApplyForLeave.css">
   </head>
 <div class="content">
     <div class="heading"><h3>Apply For Leave</h3></div>
-       
+    <br>
+    <div class="leaves">
+      <table>
+        <tr>
+          <td>
+            <label class="label">Annual Leaves</label>
+          </td>
+          <th>
+            <input class="input" type="text" name="Annualleaves" id="Annualleaves" readonly>
+          </th>
+        </tr>
+        <tr>
+          <td>
+            <label class="label">Remaining Leaves</label>
+          </td>
+          <th>
+            <input class="input" type="text" name="Remainingleaves" id="Remainingleaves" readonly>
+          </th>
+        </tr>
+      </table>
+    </div>
+    <br>
+    <div class="main">
+     
+      <table>
+          <tr>
+            <td>
+              <label class="label">Leave ID</label>
+            </td>
+            <th>
+              <input class="input" type="text" name="id" id="id">
+            </th>
+          </tr>
+          <tr>
+              <td>
+                  <label class="label">Applied Date</label>
+              </td>
+              <th>
+                  <input class="input" type="date" name="name" id="name">
+              </th>
+            </tr>
+            <tr>
+              <td>
+                  <label class="label">From Date</label>
+              </td>
+              <th>
+                  <input class="input" type="date" name="from" id="from"> 
+              </th>
+            </tr>
+            <tr>
+              <td>
+                  <label class="label">To Date</label>
+              </td>
+              <th>
+                  <input class="input" type="date" name="to" id="to"> 
+              </th>
+            </tr>
+
+        </table>
+      
+          <table>
+            <tr>
+              <td>
+                <label class="label">Reason for Leave Appling...</label>
+              </td>
+            
+            </tr>
+            <tr>
+              <th>
+                <textarea rows = "4" cols = "50" name = "reason" id="reason"></textarea>
+              </th>
+            </tr>
+          </table>
+                   
+  </div>
     </div>
 </div>
   <body>
