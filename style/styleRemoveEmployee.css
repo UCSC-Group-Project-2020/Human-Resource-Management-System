@@ -20,11 +20,12 @@
 }
 .content .selection tr th {
     width: 500px;
-  
     
 }
 .content .result{
+    padding-left: 60px;
     color: #ffffff;
+    border-top:1px white solid;
 }
 
 .content .result th{
