@@ -11,11 +11,20 @@
     background-image: linear-gradient(to right,#073356, #041d31, #000);
 }
 .Basic{
-    padding-left: 30px;
+    padding-left: 50px;
     color: #ffffff;
     font-family: "Roboto", sans-serif;
+    
 }
-
+.salarydetails{
+    border-top:1px white solid;
+}
+.leaveDetails{
+    border-top:1px white solid;
+}
+.userPre{
+    border-top:1px white solid;
+}
 table{
     padding-left: 110px;    
 }
@@ -29,6 +38,19 @@ th {
    width: 500px;
    padding-bottom: 20px;    
   }
+.userPre th{
+    width: 120px;
+}
+.userPre td{
+    width: 500px;
+}
+.userPre .topic td{
+width:450px ;
+}
+.userPre .topic th{
+    padding-left: 0;
+    width:150px ;
+    }
 .heading{
     width: 100%;
     background-color:#000;
