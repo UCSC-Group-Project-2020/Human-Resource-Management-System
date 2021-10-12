@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Human Resource Management System</title>
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/styleUpdateEmployee.css">
+  </head>
+
+  <body>
+    <div class="head">
+        <a href="#" class="Logout">Logout</a>
+        <a href="#" class="Msgs" aria-readonly="true">Messages</a>      
+        <a href="#" class="Leave">Leave Requests</a>
+        <a href="#" class="com">Complain/Suggestion</a>
+        <a href="#" class="Salary">Calculated Salary</a>   
+    </div>
+  
+    <nav class="main-nav">
+        <img src="img/avatar.svg">
+        <ul class="main-nav-ul">
+        <li>       
+            <a href="Main.html">Home</a></li>
+        <li>
+           <a href="#">Employee<span class="sub-arrow"></span></a>
+            <ul class = "emp-show">
+                <li><a href="AddEmployee.html">Add Employee</a></li>
+                <li><a href="RemoveEmployee.html">Remove Employee</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Complain/Suggestions<span class="sub-arrow"></span></a>
+             <ul>
+                 <li><a href="AddComplain.html">Add Complain/Suggestions</a></li>
+                 <li><a href="ViewComplain.html">View Complain/Suggestions</a></li>
+             </ul>
+         </li>
+         <li>
+            <a href="#">Attendance<span class="sub-arrow"></span></a>
+             <ul>
+                 <li><a href="MyAttendanceHistory.html">My Attendance History</a></li>
+                 <li><a href="StaffAttendanceHistory.html">Staff Attendance History</a></li>
+             </ul>
+         </li>
+         <li>
+            <a href="#">Salary<span class="sub-arrow"></span></a>
+             <ul>
+                 <li><a href="MySalaryOverview.html">My Salary Overview</a></li>
+                 <li><a href="StaffSalaryOverview.html">Staff Salary Overview</a></li>
+             </ul>
+         </li>
+         <li>
+            <a href="#">Leave<span class="sub-arrow"></span></a>
+             <ul>
+                <li><a href="MyLeaveHistory.html">My Leave History</a></li>
+                <li><a href="StaffLeaveHistory.html">Staff Leave History</a></li>
+                <li><a href="AppyForLeave.html">Apply For Leave</a></li>
+                <li><a href="ApproveOrRejectLeave.html">Approve Or Reject Leaves</a></li>
+             </ul>
+         </li>
+         <li>
+            <a href="#">Social Intranet<span class="sub-arrow"></span></a>
+             <ul>
+                 <li><a href="AddPost.html">Add Post</a></li>
+                 <li><a href="DeletePost.html">Delete Post</a></li>
+                 <li><a href="ChatSystem.html">Chat System</a></li>
+             </ul>
+         </li>
+         <li><a href="EditAccountDetails.html">Edit Account Details</a></li>
+         <li>
+            <a href="#">Reports<span class="sub-arrow"></span></a>
+             <ul>
+                 <li><a href="AttendanceReports.html">Attendance Reports</a></li>
+                 <li><a href="SalaryReports.html">Salary Reports</a></li>
+                 <li><a href="LeaveReports.html">Leave Reports</a></li>
+             </ul>
+         </li>
+         <li><a href="Customization.html"> Customize the System Data</a></li>
+    </ul>
+    </nav>
+
+    <div class="content">
+        <div class="heading"><h3> Update Employee</h3></div>
+        <form action="php/updateEmployeeControl.php" method="GET">
+        <br>
+        <label class="Basic">Basic Details</label>
+        <br>
+        <br>
+        <table>
+            <tr>
+              <td>
+                <label class="label">EMP ID</label>
+              </td>
+              <th>
+                <input class="input" type="text" name="empid">
+              </th>
+            </tr>
+            <tr>
+                <td>
+                    <label class="label">First Name</label>
+                </td>
+                <th>
+                    <input class="input" type="text" name="first_name">
+                </th>
+              </tr>
+              <tr>
+                <td>
+                    <label class="label">Last Name</label>   
+                </td>
+                <th>
+                    <input class="input" type="text" name="last_name">
+                </th>
+              </tr>
+              <tr>
+                <td>
+                    <label class="label">NIC</label>
+                </td>
+                <th>
+                    <input class="input" type="text" name="nic">
+                </th>
+              </tr>
+              <tr>
+                <td>
+                    <label class="label">Address</label>
+                </td>
+                <th>
+                    <input class="input" type="text" name="address">
+                </th>
+              </tr>
+              <tr>
+                <td>
+                    <label class="label">Email</label>
+                   
+                </td>
+                <th>
+                    <input class="input" type="email" name="email">
+                </th>
+        
+              </tr> <tr>
+                <td>
+                    <label class="label">Date Of Birth</label>
+                </td>
+                <th>
+                    <input class="input" type="date" name="dob">
+                </th>
+              </tr> <tr>
+                <td>
+                    <label class="label">Phone Number</label>
+                </td>
+                <th>
+                    <input class="input" type="text" name="phone">
+                </th>
+              </tr> <tr>
+                <td>
+                    <label class="label">Password</label>
+                </td>
+                <th>
+                    <input class="input" type="password" name="password">
+                </th>
+              </tr> <tr>
+                <td>
+                    <label class="label">Confirm Password</label>
+                </td>
+                <th>
+                    <input class="input" type="password" name="confirm_password">
+                    <br>
+                </th>
+              </tr>
+              <tr>
+                <td>
+                    <label class="label">Fingerprint</label>
+                </td>
+                <th>
+                    <input class="input" type="password" name="fingerPrint">
+                </th>
+              </tr> <tr>
+                <td>
+                    <label class="label">Confirm Fingerprint</label>
+                </td>
+                <th>
+                    <input class="input" type="password" name="confirmFingerPrint">
+                    <br>
+                </th>
+              </tr>
+       </table>
+       <br>
+       <label class="Basic">Salary Details</label>
+       <br>
+       <table>
+           <tr>
+             <td>
+               <label class="label">Basic Salary(per month)(Rs)
+               </label>
+             </td>
+             <th>
+               <input class="input" type="text" name="bSalary">
+             </th>
+           </tr>
+           <tr>
+               <td>
+                   <label class="label">OT Rate</label>
+               </td>
+               <th>
+                   <input class="input" type="text" name="otRate">
+               </th>
+             </tr>
+       </table>
+        <br>
+        <label class="Basic">Leave Details</label>
+        <br>
+        <table>
+              <tr>
+                <td>
+                    <label class="label">Annual Number Of Leaves</label>   
+                </td>
+                <th>
+                    <input class="input" type="text" name="leaves">
+                </th>
+              </tr>
+        </table>
+        <br>
+        <table>
+            <tr>
+                <td>
+                     <label class="Basic"><b>Customize User Privilages</b></label>
+                </td>
+                <td>
+                     <label class="Basic"><b>  Alowed</b></label>
+                </td>
+                 <td>
+                     <label class="Basic"><b> Not Allowed</b></label>
+                </td>
+             </tr>
+        </table>
+        <br>
+        <table>
+            <br>
+            <tr>
+                <td>
+                    <label class="label">Add Employee / Update Employee</label>
+                </td>
+                <th>
+                    <input class="input" type="radio" name="employeeAdd" value="1">
+                </th>
+                <th>
+                    <input class="input" type="radio" name="employeeAdd" value="0">
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <label class="label">Remove Employee</label>
+                </td>
+                <th>
+                    <input class="input" type="radio" name="employeeRemove" value="1">
+                </th>
+                <th>
+                    <input class="input" type="radio" name="employeeRemove" value="0"> 
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <label class="label">Add Post / Update Post</label>
+                </td>
+                <th>
+                    <input class="input" type="radio" name="postAdd" value="1">
+                </th>
+                <th>
+                    <input class="input" type="radio" name="postAdd" value="0">
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <label class="label">Delete Post</label>
+                </td>
+                <th>
+                    <input class="input" type="radio" name="postDelete" value="1">
+                </th>
+                <th>
+                    <input class="input" type="radio" name="postDelete" value="0">
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <label class="label">View Post</label>
+                </td>
+                <th>
+                    <input class="input" type="radio" name="postView" value="1">
+                </th>
+                <th>
+                    <input class="input" type="radio" name="postView" value="0">
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <label class="label">Use Chat System</label>
+                </td>
+                <th>
+                    <input class="input" type="radio" name="chatSystemUse" value="1">
+                </th>
+                <th>
+                    <input class="input" type="radio" name="chatSystemUse" value="0">
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <label class="label">Apply For Leave</label>
+                </td>
+                <th>
+                    <input class="input" type="radio" name="leaveApply" value="1">
+                </th>
+                <th>
+                    <input class="input" type="radio" name="leaveApply" value="0">
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <label class="label">Leave Approve or Reject Leave</label>
+                </td>
+                <th>
+                    <input class="input" type="radio" name="ApproveOrRejectLeave" value="1">
+                </th>
+                <th>
+                    <input class="input" type="radio" name="ApproveOrRejectLeave" value="0">
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <label class="label">Attendance Management</label>
+                </td>
+                <th>
+                    <input class="input" type="radio" name="attendanceManagement" value="1">
+                </th>
+                <th>
+                    <input class="input" type="radio" name="attendanceManagement" value="0">
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <label class="label">Salary Management</label>
+                </td>
+                <th>
+                    <input class="input" type="radio" name="salaryManagement" value="1">
+                </th>
+                <th>
+                    <input class="input" type="radio" name="salaryManagement" value="0">
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <label class="label">Customize Data</label>
+                </td>
+                <th>
+                    <input class="input" type="radio" name="dataCustomize" value="1">
+                </th>
+                <th>
+                    <input class="input" type="radio" name="dataCustomize" value="0">
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <label class="label">Edit Personal Details</label>
+                </td>
+                <th>
+                    <input class="input" type="radio" name="personalDetailsEdit" value="1">
+                </th>
+                <th>
+                    <input class="input" type="radio" name="personalDetailsEdit" value="0">
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <label class="label">Give Complain/ Suggestion</label>
+                </td>
+                <th>
+                    <input class="input" type="radio" name="complain_suggestionGive" value="1">
+                </th>
+                <th>
+                    <input class="input" type="radio" name="complain_suggestionGive" value="0">
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <label class="label">View Complain/ Suggestion</label>
+                </td>
+                <th>
+                    <input class="input" type="radio" name="complain_suggestionView" value="1">
+                </th>
+                <th>
+                    <input class="input" type="radio" name="complain_suggestionView" value="0">
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <label class="label">View Attendance History Only My Account</label>
+                </td>
+                <th>
+                    <input class="input" type="radio" name="myAttendanceHistoryView" value="1">
+                </th>
+                <th>
+                    <input class="input" type="radio" name="myAttendanceHistoryView" value="0">
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <label class="label">View Attendance History Others Account</label>
+                </td>
+                <th>
+                    <input class="input" type="radio" name="othersAttendanceHistoryView" value="1">
+                </th>
+                <th>
+                    <input class="input" type="radio" name="othersAttendanceHistoryView" value="0">
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <label class="label">View Leave History Only My Account</label>
+                </td>
+                <th>
+                    <input class="input" type="radio" name="myLeaveHistoryView" value="1">
+                </th>
+                <th>
+                    <input class="input" type="radio" name="myLeaveHistoryView" value="0">
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <label class="label">View Leave History Others Account</label>
+                </td>
+                <th>
+                    <input class="input" type="radio" name="otherLeaveHistoryView" value="1">
+                </th>
+                <th>
+                    <input class="input" type="radio" name="otherLeaveHistoryView" value="0">
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <label class="label">View Salary Overview Only My Account</label>
+                </td>
+                <th>
+                    <input class="input" type="radio" name="mySalary" value="1">
+                </th>
+                <th>
+                    <input class="input" type="radio" name="mySalary" value="0">
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <label class="label">View Salary Overview Others account</label>
+                </td>
+                <th>
+                    <input class="input" type="radio" name="otherSalary" value="1">
+                </th>
+                <th>
+                    <input class="input" type="radio" name="otherSalary" value="0">
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <label class="label">Report generation</label>
+                </td>
+                <th>
+                    <input class="input" type="radio" name="generationReport" value="1">
+                </th>
+                <th>
+                    <input class="input" type="radio" name="generationReport" value="0">
+                </th>
+            </tr>
+        </table>
+          </table>
+          <table>
+            <tr>
+                <td>
+                <td>
+                <th>
+                    <div class="update">
+                        <!-- <a href="thirdpagetest.html" class="next">Register &raquo;</a> -->
+                        <input type="submit" name="update" value="Update"class="update" >
+                    </div>      
+                </th>
+                </td>
+                </td>
+              </tr>
+          </table>
+        </form>
+             
+        </div>
+    </div>
+
+</body>
+</html>
